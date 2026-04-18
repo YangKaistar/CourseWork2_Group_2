@@ -12,6 +12,8 @@ body{
     padding: 20px;
     background: linear-gradient(135deg, rgb(89, 99, 193), rgb(120, 130, 220));
 }
+
+/* This CSS styles a responsive appointment booking form with a modern design. It includes styles for the form container, input fields, radio buttons, and a notification system for booking confirmations. The form is designed to be visually appealing with gradients, shadows, and smooth transitions.*/
 .Appointment-form{
     max-width: 700px;
     width: 100%;
@@ -133,6 +135,46 @@ form .user-details .button {
     width: 100%;
 }
 
+/* ─── Booking Notification ─────────────────────────── */
+#notification {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    background: linear-gradient(135deg, rgb(89, 99, 193), rgb(120, 130, 220));
+    color: #fff;
+    padding: 16px 24px;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 500;
+    box-shadow: 0 8px 24px rgba(89, 99, 193, 0.35);
+    display: none;
+    z-index: 9999;
+    max-width: 320px;
+    line-height: 1.5;
+}
+
+#notification .notification-title {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    opacity: 0.8;
+    margin-bottom: 4px;
+}
+
+#notification .notification-close {
+    position: absolute;
+    top: 10px;
+    right: 14px;
+    cursor: pointer;
+    font-size: 16px;
+    opacity: 0.7;
+}
+
+#notification .notification-close:hover {
+    opacity: 1;
+}
+
 @media (max-width: 584px) {
     .Appointment-form {
         padding: 20px;
@@ -147,3 +189,6 @@ form .user-details .button {
         gap: 10px;
     }
 }
+
+
+
